@@ -1,0 +1,10 @@
+.card:hover{
+    color: aliceblue;
+    background-color: #222;
+}
+.hidden{
+    opacity: 0;
+}
+.showw{
+    opacity: 1;
+}
