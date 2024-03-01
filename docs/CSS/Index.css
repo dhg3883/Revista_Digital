@@ -1,24 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 *{
     margin: 0;
     transition: all 0.5s; 
-
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 body{
     background-color: #ddd;
 }
-.titulazo{
-    color: aliceblue;
-    padding-top: 60px;
-    padding-bottom: 300px;
-    background-color: rgba(0, 0, 0, 0.76);
-    font-size: 175px;
+.mini{
+    font-size: xx-small;
+    margin-bottom: 45%;
+    padding-right: 30%
 }
-.first{
-    height: 550px;
-    display: block;
-    background-image: url(../IMG/4312-modelos\ de\ negocio.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+.subtitulo{
+    display: none;
+}
+.first{ 
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: #000000;
+    color: #ddd;
+  }
+.titulazo{
+    font-size: 96px;
+    width: 100%;
+}
+.titulazores{
+    display: none;
 }
 .right{
     font-size: 20px;
@@ -37,14 +52,32 @@ body{
     justify-content: space-evenly;
     border-radius: 5px;
 }
+.contenedor2{
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
 .card{
     margin: 2%; 
+    background-color: #ddd;
+}
+.box{
+    width: 450px;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5%;
 }
 section{
     padding: 10%;
     padding-bottom: -10%;
     background-color: #ddd;
 
+}
+.azu{
+    background-color: rgb(0, 0, 255);
+    color: aliceblue;
 }
 .blck{
     color: aliceblue;
@@ -174,15 +207,22 @@ section{
     opacity: 0;
     margin-top: -577px;
 }
+
 @media screen and (max-width: 800px) {
+
+    *{
+        max-width: 100%;
+    }
     .titulazo{
-        font-size: 500%;
-        padding-bottom: 5%;
-        background-color: #222;
+        font-size: 40px;
+        margin-right: 0%;
+    }
+    .mini{
+        display: none;
+        margin-right: 0%;
     }
     .first{
-        height: 270px;
-        background-image: none
+        margin-right: 0%;
     }
     .tit{
         text-align: center;
@@ -190,6 +230,7 @@ section{
         width: 100%;
         height: auto;
         margin-top: -9%;
+        margin-right: 0%;
     }
     .tit2{
         text-align: center;
@@ -198,21 +239,25 @@ section{
         height: auto;
         margin-top: -9%;
         background-color: transparent;
+        margin-right: 0%;
     }
     .right{
         font-size: 14px;
         margin-top: 0;
         padding: 0;
+        margin-right: 0%;
     }
     .left{
         font-size: 14px;
         margin-top: 10%;
         padding: 0;
+        margin-right: 0%;
     }
     .vidres{
         opacity: 1;
         margin-top: -136px;
         margin-bottom: -577px;
+        margin-right: 0%;
     }
     .video{
         opacity: 0; ;
@@ -221,5 +266,32 @@ section{
     }
     iframe{
         height: 0;
+        margin-right: 0%;
+    }
+  }
+  @media screen and (max-width: 400px){
+    .first{
+        width: 400px;
+    } 
+    .titulazo{
+        display: none;
+    }
+    .titulazores{
+        display: contents;
+        font-size: 96px;  
+    }
+    .subtitulo{
+        display: contents;
+        color: gray ;
+    }
+    .box{
+        width: 250px;
+    }
+    .texto{
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    section{
+        width: 400px;
     }
   }

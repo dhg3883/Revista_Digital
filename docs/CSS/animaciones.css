@@ -1,10 +1,16 @@
+
 .card:hover{
     color: aliceblue;
-    background-color: #222;
+    background-color: #010c30;
+    transition: 0.5s;
+}
+.al:hover{
+  background-color: blue;
 }
 .hidden{
     opacity: 0;
 }
 .showw{
     opacity: 1;
+    transition: 2.5s;
 }
