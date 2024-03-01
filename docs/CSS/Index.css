@@ -269,6 +269,14 @@ section{
         margin-right: 0%;
     }
   }
+  table{
+    border: 1px solid white;
+    margin: 10px;
+  }
+  td:hover{
+    color: blue;
+    background-color: white;
+  }
   @media screen and (max-width: 400px){
     .first{
         width: 400px;
