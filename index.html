@@ -56,8 +56,12 @@
       <h1 class="fw-bolder">Algoritmos</h1>
       <div class="texto">
         	Conjunto ordenado y finito de operaciones que permite hallar la solución de un problema.
+      </div>
+      <div class="fw-bolder">Un algoritmo es:</div>
+      <span class="mini2">Puedes clickear cualquiera de las cartas para que te enseñen mas informacion</span>
           <div class="contenedor">
-            <div class="card  " style="width: 18rem">
+            
+            <div class="card bg-primary" onclick="Mosinf()" style="width: 18rem">
               <span
                 class="material-symbols-outlined text-center"
                 style="font-size: xx-large"
@@ -67,9 +71,17 @@
               <img src="IMG/road-end-sign-near-a-road-free-photo.jpeg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h2 class="text-center">Finito</h2>
+                <div id="infA" class="hidden">
+                <div>Estos tienen un inicio un fin si un algoritmo es infinito provocaria
+                  un error fatal en el computador o dispositvo
+                </div>
+              </div>
               </div>
             </div>
-            <div class="card  " style="width: 18rem">
+            <article id="modal1">
+
+            </article>
+            <div class="card bg-primary  " style="width: 18rem">
               <span
                 class="material-symbols-outlined text-center"
                 style="font-size: xx-large"
@@ -81,7 +93,7 @@
                 <h2 class="text-center">Ordenado</h2>
               </div>
             </div>
-            <div class="card  " style="width: 18rem">
+            <div class="card bg-primary  " style="width: 18rem">
               <span
                 class="material-symbols-outlined text-center"
                 style="font-size: xx-large"
@@ -93,7 +105,49 @@
                 <h2 class="text-center">Preciso</h2>
               </div>
             </div>
-
+            </div>
+            <div>Estos tienen:</div>
+            <div class="contenedor">
+            <div class="card bg-primary  " style="width: 18rem">
+              <span
+                class="material-symbols-outlined text-center"
+                style="font-size: xx-large"
+              >
+                counter_1
+              </span>
+              <img src="IMG/entrada.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="text-center">Entrada</h2>
+              </div>
+              
+            </div>
+            <div class="card bg-primary  " style="width: 18rem">
+              <span
+                class="material-symbols-outlined text-center"
+                style="font-size: xx-large"
+              >
+                counter_2
+              </span>
+              <img src="IMG/proceso.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="text-center">Proceso</h2>
+              </div>
+              
+            </div>
+            <div class="card bg-primary  " style="width: 18rem">
+              <span
+                class="material-symbols-outlined text-center"
+                style="font-size: xx-large"
+              >
+                counter_3
+              </span>
+              <img src="IMG/salida.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h2 class="text-center">Salida</h2>
+              </div>
+              
+            </div>
+          </div>
       </div>
       <h2>Ejemplo de un algoritmo</h2>
       <div class="texto"><span class="fw-bolder">Hacer una taza de te:</span>

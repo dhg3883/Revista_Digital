@@ -15,6 +15,9 @@ body{
     margin-bottom: 45%;
     padding-right: 30%
 }
+.mini2{
+    font-size: xx-small;
+}
 .subtitulo{
     display: none;
 }
@@ -31,6 +34,8 @@ body{
 .titulazo{
     font-size: 96px;
     width: 100%;
+    text-decoration: underline rgb(255, 255, 255);
+    text-decoration-thickness: 1px ;
 }
 .titulazores{
     display: none;
@@ -45,6 +50,7 @@ body{
     padding-right: 30%;
     margin-top: -35%;
 }
+
 .contenedor{
     padding-top: 5%;
     display: flex;
@@ -61,7 +67,11 @@ body{
 }
 .card{
     margin: 2%; 
-    background-color: #ddd;
+}
+.card img{
+    border-radius: 10px;
+    width: 95%;
+    padding-left: 5%;
 }
 .box{
     width: 450px;
@@ -214,6 +224,17 @@ section{
         max-width: 100%;
     }
     .titulazo{
+        display: none;
+    }
+    .titulazores{
+        display: contents;
+        font-size: 96px;  
+    }
+    .subtitulo{
+        display: contents;
+        color: gray ;
+    }
+    .titulazo{
         font-size: 40px;
         margin-right: 0%;
     }
@@ -281,17 +302,7 @@ section{
     .first{
         width: 400px;
     } 
-    .titulazo{
-        display: none;
-    }
-    .titulazores{
-        display: contents;
-        font-size: 96px;  
-    }
-    .subtitulo{
-        display: contents;
-        color: gray ;
-    }
+
     .box{
         width: 250px;
     }

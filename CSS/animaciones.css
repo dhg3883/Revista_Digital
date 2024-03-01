@@ -8,9 +8,16 @@
   background-color: blue;
 }
 .hidden{
+    display: none;
     opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 .showw{
     opacity: 1;
+    height: auto;
+
+}
+#infA{
     transition: 2.5s;
 }
