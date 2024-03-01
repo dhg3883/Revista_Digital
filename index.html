@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modelos Proyectos</title>
+    <title>Revista Digital</title>
   </head>
   <link rel="stylesheet" href="CSS/Index.css" />
   <link rel="stylesheet" href="CSS/Iconos.css" />
@@ -53,15 +53,15 @@
       </div>
     </section>
      <section class="azu">
-      <h1 class="fw-bolder">Algoritmos</h1>
+      <h1 class="fw-bolder imp">Algoritmos</h1>
       <div class="texto">
         	Conjunto ordenado y finito de operaciones que permite hallar la solución de un problema.
       </div>
       <div class="fw-bolder">Un algoritmo es:</div>
       <span class="mini2">Puedes clickear cualquiera de las cartas para que te enseñen mas informacion</span>
-          <div class="contenedor">
+          <div class="contenedor" value=1>
             
-            <div class="card bg-primary" onclick="Mosinf()" style="width: 18rem">
+            <div class="card bg-primary" onclick="Mosinf(this)" style="width: 18rem">
               <span
                 class="material-symbols-outlined text-center"
                 style="font-size: xx-large"
@@ -78,10 +78,7 @@
               </div>
               </div>
             </div>
-            <article id="modal1">
-
-            </article>
-            <div class="card bg-primary  " style="width: 18rem">
+            <div class="card bg-primary  " onclick="Mosinf(this)" style="width: 18rem">
               <span
                 class="material-symbols-outlined text-center"
                 style="font-size: xx-large"
@@ -91,9 +88,13 @@
               <img src="IMG/toc-orden.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h2 class="text-center">Ordenado</h2>
+                <div id="infA" class="hidden">
+                  Estos tienen un orden especifico al cual seguir, si alguno de estos pasos 
+                  del algoritmo es cambiado generara un resultado diferente a lo que normalmente se espera
+                </div>
               </div>
             </div>
-            <div class="card bg-primary  " style="width: 18rem">
+            <div class="card bg-primary" onclick="Mosinf(this)" style="width: 18rem">
               <span
                 class="material-symbols-outlined text-center"
                 style="font-size: xx-large"
@@ -103,25 +104,34 @@
               <img src="IMG/mira.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h2 class="text-center">Preciso</h2>
+                <div id="infA" class="hidden">
+                  Siempre tienen el mismo resultado no importa que y no me refiero a numeros si no más como
+                si calientas el agua a altas temperaturas vas a provocar que el agua hierva, si se sigue el orden de los pasos provocaras el resultado que se quiere que de.                </div>
               </div>
+            </div>
             </div>
             </div>
             <div>Estos tienen:</div>
             <div class="contenedor">
-            <div class="card bg-primary  " style="width: 18rem">
-              <span
-                class="material-symbols-outlined text-center"
-                style="font-size: xx-large"
-              >
+              <div class="card bg-primary  " onclick="Mosinf(this)" style="width: 18rem">
+                <span
+                  class="material-symbols-outlined text-center"
+                  style="font-size: xx-large"
+                >
                 counter_1
-              </span>
-              <img src="IMG/entrada.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h2 class="text-center">Entrada</h2>
-              </div>
-              
+                </span>
+                <img src="IMG/entrada.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h2 class="text-center">Entrada</h2>
+                  <div id="infA" class="hidden">
+                    Para poder obtener un resultado lo que necesita primero es darle 
+                    un punto en el cual el algoritmo pueda empezar, por ejemplo a la hora de
+                    calcular una operación matemática hay que darle una cantidad definida de numeros 
+                  </div>
+                </div>
             </div>
-            <div class="card bg-primary  " style="width: 18rem">
+            
+            <div class="card bg-primary  " onclick="Mosinf(this)" style="width: 18rem">
               <span
                 class="material-symbols-outlined text-center"
                 style="font-size: xx-large"
@@ -131,10 +141,14 @@
               <img src="IMG/proceso.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h2 class="text-center">Proceso</h2>
+                <div id="infA" class="hidden">
+                  Ya que se le dio el punto en el cual puede empezar ahora el algoritmo conlleva 
+                  un proceso para dar un resultado, eso ya depende mucho del calculo o proceso que se queria
+                  llevar
+                </div>
               </div>
-              
-            </div>
-            <div class="card bg-primary  " style="width: 18rem">
+              </div>
+            <div class="card bg-primary  " onclick="Mosinf(this)" style="width: 18rem">
               <span
                 class="material-symbols-outlined text-center"
                 style="font-size: xx-large"
@@ -144,17 +158,23 @@
               <img src="IMG/salida.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h2 class="text-center">Salida</h2>
+                <div id="infA" class="hidden">
+                  Como ultima parte del algoritmo el mismo no te va decir el resultado por arte de magia,
+                  este necesita un punto en el cual pueda darte el resultado, esto simplemente puede ser una orden 
+                  dentro del codigo para poder enseñar el resultado en pantalla.
+                </div>
+              </div>
               </div>
               
             </div>
           </div>
-      </div>
+
       <h2>Ejemplo de un algoritmo</h2>
       <div class="texto"><span class="fw-bolder">Hacer una taza de te:</span>
       <table>
         <td>1. Pon la bolsa de te en la taza</td>
         <tr></tr>
-        <td>2. Llena el herbidor de agua </td>
+        <td>2. Llena el hervidor de agua </td>
         <tr></tr>
         <td>3. Hierve el agua</td>
         <tr></tr>
@@ -169,8 +189,10 @@
         <td>8. Toma de la taza de te </td>
       </table>
     </div>
-      <h2>Tipos de Algoritmos</h2>
-      <div class="texto"></div>
+    </section>
+    <div class="difuminar1"></div>
+    <section class="azu2">
+      <h1 class="fw-bolder imp">Pseudocódigos</h1>
     </section>
     <section class="">
       <h1>¿Como podemos comenzar un proyecto?</h1>
