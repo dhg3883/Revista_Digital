@@ -1,4 +1,6 @@
-
+section:hover{
+    border: solid rgb(255, 255, 255);;
+}
 .card:hover{
     color: aliceblue;
     background-color: #010c30;
@@ -7,16 +9,36 @@
 .al:hover{
   background-color: blue;
 }
+td:hover{
+    color: blue;
+    background-color: #ddd;
+  }
+.caja:hover{
+    color: blue;
+    background-color: #ddd;
+    h1{
+        color: #010c30;
+    }
+}
+.sim[value=true]{
+    color: aquamarine;
+}
 .hidden{
     display: none;
     opacity: 0;
-    height: 0;
+    height: 0px;
     overflow: hidden;
 }
 .showw{
     opacity: 1;
     height: auto;
-
+}
+.showw::before{
+    height: 0;
+    transition: all 0.5;
+}
+.showw::after{
+    height: auto;
 }
 #infA{
     transition: 2.5s;
