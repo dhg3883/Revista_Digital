@@ -1,6 +1,4 @@
-section:hover{
-    border: solid rgb(255, 255, 255);;
-}
+
 .card:hover{
     color: aliceblue;
     background-color: #010c30;
@@ -18,6 +16,10 @@ td:hover{
     background-color: #ddd;
     h1{
         color: #010c30;
+    }
+    .pseudo{
+        color: black;
+        background-color: #bbb;
     }
 }
 .sim[value=true]{

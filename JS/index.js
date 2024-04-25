@@ -1,5 +1,7 @@
 window.onload = suma()
 window.onload = comp()
+window.onload = if1()
+window.onload = op()
 
 function Mosinf(card) {
     var infA = card.querySelector('.hidden');
@@ -13,6 +15,56 @@ function Mosinf(card) {
         infA.classList.toggle('hidden')
         }
 
+}
+function op() {
+    op1=document.getElementById("op1")
+    op2=document.getElementById("op2")
+    ops=document.getElementById("ops")
+    resop=document.getElementById("resop")
+    opf1=parseInt(op1.value)
+    opf2=parseInt(op2.value)
+    if (ops.value=="+") {
+        res=opf1+opf2
+        resop.innerHTML=res
+    }
+    if (ops.value=="-") {
+        res=op1.value-op2.value
+        resop.innerHTML=res
+    }
+    if (ops.value=="*") {
+        res=op1.value*op2.value
+        resop.innerHTML=res
+    }
+    if (ops.value=="/") {
+        res=op1.value/op2.value
+        resop.innerHTML=res
+    }
+}
+function if1(input) {
+    x=document.getElementById("hl")
+    if (input.value>5) {
+        x.innerHTML="hola mundo"
+    }
+}
+function if2(input) {
+   x=document.getElementById("hl2")
+   if (input.value>5){
+    x.innerHTML="hola mundo"
+   }else{
+    x.innerHTML="adios mundo"
+   }
+}
+function if3(input){
+    x=document.getElementById("hl3")
+    if (input.value>10){
+     if (input.value>15) {
+        x.innerHTML=":)"
+     }else{
+        x.innerHTML=":("
+     }
+    }else{
+        x.innerHTML=":D"
+    }
 }
 
 function suma() {
