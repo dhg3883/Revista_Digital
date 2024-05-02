@@ -14,6 +14,9 @@ header{
 .navbar-nav .nav-item a{
     color: #00ff00;
 }
+p{
+    background-color: #222;
+}
 body{
     background-color: #ddd;
 }
